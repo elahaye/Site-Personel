@@ -1,0 +1,110 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-course',
+  template: `
+    <section id="course">
+      <h3>Parcours professionnel</h3>
+
+      <article class="flex-column">
+        <div class="flex-row">
+          <p>2020</p>
+          <div class="flex-column">
+            <p>
+              <strong
+                ><i class="fas fa-graduation-cap"></i> Formation - Angular /
+                Symfony</strong
+              >
+            </p>
+            <p>
+              <strong
+                ><i class="fas fa-graduation-cap"></i> Certification RNCP
+                Développement Intégration Web (Bac+2)</strong
+              >
+            </p>
+          </div>
+        </div>
+        <div class="flex-row">
+          <p>2019</p>
+          <div class="flex-column">
+            <p>
+              Sécrétaire médicale dans le Cabinet Dentaire Clinadent (Marseille
+              5ème)
+            </p>
+            <ul>
+              <li>Gestion administrative et Prise en charge des patients</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-row">
+          <p>2018</p>
+          <div class="flex-column">
+            <p>
+              Conseillère voyages d'affaire à l'agence de voyage Egencia
+              (Angers)
+            </p>
+            <ul>
+              <li>
+                Traitement des requêtes clients et Réservation des titres de
+                transport
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-row">
+          <p>2017 - 2018</p>
+          <div class="flex-column">
+            <p>
+              Professeur particulier de français et d'anglais (Tokyo)<i
+                class="fas fa-torii-gate"
+              ></i>
+            </p>
+            <ul>
+              <li>
+                Apprentissage de la langue francaise niveau débutant/avancé
+              </li>
+              <li>
+                Renforcement de la langue anglaise niveau conversationnel
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-row">
+          <p>2016 - 2017</p>
+          <div class="flex-column">
+            <p>
+              Pâtissière-Vendeuse aux Merveilleux de Fred (Londres)<i
+                class="fas fa-chess-queen"
+              ></i>
+            </p>
+            <ul>
+              <li>Gestion de la clientèle et Mise en place des stocks</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-row">
+          <p>2014 - 2016</p>
+          <p>
+            <i class="fas fa-graduation-cap"></i> BTS Tourisme par le CNED
+            (Centre National d'Education à Distance)
+          </p>
+        </div>
+        <div class="flex-row">
+          <p>2011 - 2014</p>
+          <p>
+            <i class="fas fa-graduation-cap"></i> LLCE Japonais (Langue,
+            Littérature et Civilisation Etrangère) à l'INALCO (Paris)
+          </p>
+        </div>
+      </article>
+
+      <article class="flex-column"></article>
+    </section>
+  `,
+  styles: [],
+})
+export class CourseComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}

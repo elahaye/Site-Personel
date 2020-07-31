@@ -1,1 +1,230 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --purpleColor: #443742;
+  --darkBlueColor: #132226;
+  --brownColor: #846c5b;
+  --orangeColor: #cea07e;
+  --beigeColor: #e2e8c0;
+}
+:root {
+  --generalWriting: "Lato", sans-serif;
+  --bigTitleWriting: "Courgette", cursive;
+  --titleWriting: "Playball", cursive;
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+--------------------- GENERAL ------------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+body,
+a {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-family: var(--generalWriting);
+  line-height: 1;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--purpleColor);
+}
+li {
+  line-height: 1.5;
+}
+button {
+  padding: 1%;
+  border: 1px solid var(--purpleColor);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.fas,
+.fab,
+.far {
+  padding: 0 10px;
+  font-size: 2.8rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
+h1,
+h2 {
+  font-family: var(--bigTitleWriting);
+  color: white;
+  text-shadow: 4px 3px 3px var(--brownColor);
+}
+h1 {
+  font-size: 8rem;
+  margin: 0;
+  padding: 10vh;
+}
+h2 {
+  font-size: 6rem;
+  margin: 0;
+}
+h3,
+h4 {
+  font-family: var(--titleWriting);
+}
+h3 {
+  font-size: 5rem;
+}
+section h3 {
+  text-shadow: 4px 3px 3px var(--orangeColor);
+}
+h4 {
+  font-size: 3.5rem;
+}
+section {
+  color: var(--purpleColor);
+  text-align: center;
+  height: 91vh;
+}
+article {
+  margin: 0 auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+---------------------- HEADER ------------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+
+header {
+  background-color: var(--purpleColor);
+}
+header img {
+  float: left;
+  margin: 1.5vh 2vw 0 2vw;
+  color: white;
+  height: 5vh;
+}
+nav {
+  padding: 2vh 2vh 2vh 5vw;
+}
+nav a {
+  color: white;
+  margin-right: 2%;
+  line-height: 1.5;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+----------------------- INTRO ------------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+#intro {
+  background: url("assets/background.jpg") left no-repeat;
+  background-size: cover;
+}
+#intro img {
+  width: 16vw;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin-top: 10vh;
+}
+#intro article {
+  padding: 0 0 0 50vw;
+  text-align: center;
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+----------------------- COURSE -----------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+#course article > div > p,
+#course article > div > p + div {
+  display: inline-block;
+}
+#course article > div > p:first-child {
+  width: 35%;
+  border-right: 1px solid var(--purpleColor);
+}
+#course article > div > p + div,
+#course article > div > p + p {
+  width: 60%;
+}
+#course ul {
+  display: inline-block;
+  margin-top: 0;
+}
+#course li {
+  list-style-type: circle;
+  font-size: 1.8rem;
+  color: var(--brownColor);
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+----------------------- SKILLS ----------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+
+#skills article {
+  margin-bottom: 20px;
+}
+.center {
+  align-items: center;
+}
+.personnality p {
+  margin-right: 40px;
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+----------------------- PROJECT ----------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+
+#project li {
+  text-align: left;
+}
+.waiting {
+  font-family: var(--titleWriting);
+  margin: 2% 0;
+  font-size: 4rem;
+  text-shadow: 4px 3px 3px var(--beigeColor);
+}
+.underline {
+  text-decoration: underline;
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+---------------------- CONTACT -----------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+
+#contact article {
+  justify-content: center;
+}
+#contact p:not(:last-child),
+#contact button:not(:last-child) {
+  margin-right: 3%;
+}
