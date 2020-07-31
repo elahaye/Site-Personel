@@ -207,12 +207,36 @@ nav a:hover {
 }
 .waiting {
   font-family: var(--titleWriting);
-  margin: 2% 0;
+  margin: 2% 0 1%;
+  padding: 1%;
   font-size: 4rem;
   text-shadow: 4px 3px 3px var(--beigeColor);
+  border: 1px solid var(--brownColor);
+  display: inline-block;
 }
 .underline {
   text-decoration: underline;
+}
+.persoproject {
+  margin-bottom: 10px;
+  align-items: center;
+}
+.persoproject a,
+.persoproject p {
+  margin: 0 0 2% 0;
+  line-height: 1.2;
+}
+.persoproject div {
+  width: 45%;
+}
+.persoproject h4 {
+  margin: 20px;
+}
+
+.persoproject img {
+  height: 175px;
+  border: 2px solid var(--orangeColor);
+  border-radius: 20px;
 }
 
 /*----------------------------------------------------------
@@ -227,4 +251,15 @@ nav a:hover {
 #contact p:not(:last-child),
 #contact button:not(:last-child) {
   margin-right: 3%;
+}
+
+#contact button {
+  border: 2px solid var(--orangeColor);
+  background-color: var(--orangeColor);
+  margin-top: 2%;
+  box-shadow: 5px 4px 3px var(--brownColor);
+  display: inline-block;
+}
+#contact button a {
+  color: white;
 }

@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
       </article>
       <article class="flex-row">
         <button>
-          <a href="../cv_lahaye_elise.pdf" download
+          <a href="assets/cv_lahaye_elise.pdf" download
             ><i class="fas fa-file-download"></i>Téléchargez mon CV</a
           >
         </button>
