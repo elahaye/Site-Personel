@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  lienLevelUp: 'http://localhost:4201',
+  lienShareMyBook: 'http://localhost:3000',
+  lienShareMyBookAdmin: 'http://localhost:3001',
 };
 
 /*

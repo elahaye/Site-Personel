@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-projects',
@@ -8,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
         <h3>Projets Personnels</h3>
 
         <div class="flex-row persoproject">
-          <a href="#"><img src="assets/projet1.png" alt="Projet 1" /></a>
+          <a [href]="env.lienLevelUp"
+            ><img src="assets/projet1.png" alt="Projet 1"
+          /></a>
           <div class="flex-column">
-            <a href="#"><h4>Projet 1 - Level Up</h4></a>
+            <a [href]="env.lienLevelUp"><h4>Projet 1 - Level Up</h4></a>
             <p>
               Projet réalisé dans le cadre de la fin de ma première formation
             </p>
@@ -27,9 +30,24 @@ import { Component, OnInit } from '@angular/core';
           </div>
         </div>
         <div class="flex-row persoproject">
-          <a href="#"><img src="assets/projet2.png" alt="Projet 2" /></a>
+          <div class="flex-column twolinks">
+            <a [href]="env.lienShareMyBook"
+              ><img src="assets/projet2.png" alt="Projet 2"
+            /></a>
+            <a [href]="env.lienShareMyBookAdmin"
+              ><img src="assets/projet2admin.png" alt="Projet 2"
+            /></a>
+          </div>
           <div class="flex-column">
-            <a href="#"><h4>Projet 2 - Share My Book</h4></a>
+            <a [href]="env.lienShareMyBook"
+              ><h4>Projet 2 - Share My Book</h4></a
+            >
+            <a class="underline" [href]="env.lienShareMyBookAdmin"
+              ><strong
+                ><i class="fas fa-plus-circle"></i>Lien Site
+                Administration</strong
+              ></a
+            >
             <p>
               Projet réalisé dans le cadre de la fin de ma seconde formation
             </p>
@@ -47,8 +65,6 @@ import { Component, OnInit } from '@angular/core';
       </article>
 
       <h3>Autres projets réalisés</h3>
-
-      <article></article>
 
       <article class="flex-row">
         <h4>Compétences globales à tous les projets</h4>
@@ -91,6 +107,8 @@ import { Component, OnInit } from '@angular/core';
   styles: [],
 })
 export class ProjectsComponent implements OnInit {
+  env = environment;
+
   constructor() {}
 
   ngOnInit(): void {}

@@ -91,11 +91,12 @@ section {
 article {
   margin: 0 auto;
 }
-
 strong {
   font-weight: bold;
 }
-
+ul {
+  padding: 0;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -115,14 +116,12 @@ strong {
 header {
   background-color: var(--purpleColor);
 }
-header img {
-  float: left;
-  margin: 1.5vh 2vw 0 2vw;
+nav {
+  padding: 2vh 2vw;
+}
+nav img {
   color: white;
   height: 5vh;
-}
-nav {
-  padding: 2vh 2vh 2vh 5vw;
 }
 nav a {
   color: white;
@@ -163,12 +162,12 @@ nav a:hover {
   display: inline-block;
 }
 #course article > div > p:first-child {
-  width: 35%;
+  width: 30%;
   border-right: 1px solid var(--purpleColor);
 }
 #course article > div > p + div,
 #course article > div > p + p {
-  width: 60%;
+  width: 65%;
 }
 #course ul {
   display: inline-block;
@@ -189,11 +188,14 @@ nav a:hover {
 #skills article {
   margin-bottom: 20px;
 }
-.center {
+#skills article:first-of-type > div {
+  width: 50%;
+}
+.personnality {
   align-items: center;
 }
 .personnality p {
-  margin-right: 40px;
+  margin: 0 20px;
 }
 
 /*----------------------------------------------------------
@@ -204,15 +206,6 @@ nav a:hover {
 
 #project li {
   text-align: left;
-}
-.waiting {
-  font-family: var(--titleWriting);
-  margin: 2% 0 1%;
-  padding: 1%;
-  font-size: 4rem;
-  text-shadow: 4px 3px 3px var(--beigeColor);
-  border: 1px solid var(--brownColor);
-  display: inline-block;
 }
 .underline {
   text-decoration: underline;
@@ -226,8 +219,8 @@ nav a:hover {
   margin: 0 0 2% 0;
   line-height: 1.2;
 }
-.persoproject div {
-  width: 45%;
+.persoproject div:not(.twolinks) {
+  width: 60%;
 }
 .persoproject h4 {
   margin: 20px;
@@ -237,6 +230,10 @@ nav a:hover {
   height: 175px;
   border: 2px solid var(--orangeColor);
   border-radius: 20px;
+}
+
+.persoproject .underline {
+  margin-bottom: 30px;
 }
 
 /*----------------------------------------------------------
@@ -262,4 +259,191 @@ nav a:hover {
 }
 #contact button a {
   color: white;
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+-------------------------------- SCREEN SIZES ------------------------------------
+----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+-------------------- BURGER MENU ---------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+
+@media only screen and (max-width: 720px) {
+  header {
+    .fas {
+      padding: 15px 10px;
+      color: white;
+    }
+  }
+  nav {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 4vw);
+  }
+  nav a {
+    margin: 0;
+  }
+
+  .nav-site {
+    position: absolute;
+    background-color: var(--purpleColor);
+
+    &.visible {
+      transition: ease-in-out 1s;
+      top: 59px;
+      z-index: 10;
+    }
+    &.invisible {
+      top: -139px;
+      z-index: -1;
+    }
+  }
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+-------- HOME PAGE / COURSE PAGE / CONTACT PAGE ------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+
+@media only screen and (max-width: 1400px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  #intro article {
+    padding: 0 0 0 30vw;
+  }
+  #intro img {
+    width: 25vw;
+    border: 5px solid white;
+    margin-top: 6vh;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  #intro article {
+    padding: 0 0 0 0;
+  }
+  #intro img {
+    width: 35vw;
+  }
+
+  #course article > div > p:first-child {
+    width: 18%;
+    font-size: 1.7rem;
+  }
+  #course article > div > p + div,
+  #course article > div > p + p {
+    width: 77%;
+    font-size: 1.7rem;
+  }
+  #course li {
+    font-size: 1.6rem;
+  }
+  #course .fas {
+    font-size: 2rem;
+    padding: 0 5px;
+  }
+
+  #contact .flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact button {
+    width: 50%;
+  }
+  #contact button:not(:last-child) {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  #contact .fas,
+  #contact .fab,
+  #contact .far {
+    font-size: 2.5rem;
+  }
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+---------------------- SKILLS PAGE -------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+@media only screen and (max-width: 900px) {
+  #skills article {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  #skills article:first-of-type > div {
+    width: 100%;
+  }
+  #skills article:nth-of-type(2) li {
+    list-style-type: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #skills article:first-of-type > div {
+    display: flex;
+    flex-direction: column;
+  }
+  #skills li {
+    list-style-type: none;
+  }
+  .personnality {
+    flex-direction: column;
+  }
+  .personnality p {
+    margin-bottom: 30px;
+  }
+}
+
+/*----------------------------------------------------------
+------------------------------------------------------------
+-------------------- PROJECTS PAGE -------------------------
+------------------------------------------------------------
+----------------------------------------------------------*/
+
+@media only screen and (max-width: 1020px) {
+  #project .flex-row {
+    flex-direction: column;
+  }
+  .persoproject {
+    margin-bottom: 40px;
+  }
+  .persoproject div {
+    width: 100%;
+  }
+  #project li {
+    text-align: center;
+  }
+  #project h4 {
+    margin: 30px 0 10px;
+  }
+  #course li {
+    list-style-type: none;
+  }
 }

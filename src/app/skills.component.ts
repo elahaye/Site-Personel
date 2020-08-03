@@ -7,26 +7,28 @@ import { Component, OnInit } from '@angular/core';
       <h3>Compétences</h3>
       <article class="flex-row">
         <h4>Compétences Informatiques</h4>
-        <div>
-          <p class="underline"><strong>FRONTEND</strong></p>
-          <ul>
-            <li><strong>Angular 9</strong></li>
-            <li>HTML 5</li>
-            <li>CSS 3</li>
-            <li>JS ES6</li>
-            <li>Wordpress</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
-        <div>
-          <p class="underline"><strong>BACKEND</strong></p>
-          <ul>
-            <li><strong>Symfony 4</strong></li>
-            <li>PHP 7</li>
-            <li>SQL / MySQL</li>
-            <li>Framework MVC</li>
-            <li>POO / Procédural</li>
-          </ul>
+        <div class="flex-row">
+          <div>
+            <p class="underline"><strong>FRONTEND</strong></p>
+            <ul>
+              <li><strong>Angular 9</strong></li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>JS ES6</li>
+              <li>Wordpress</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div>
+            <p class="underline"><strong>BACKEND</strong></p>
+            <ul>
+              <li><strong>Symfony 4</strong></li>
+              <li>PHP 7</li>
+              <li>SQL / MySQL</li>
+              <li>Framework MVC</li>
+              <li>POO / Procédural</li>
+            </ul>
+          </div>
         </div>
       </article>
       <article class="flex-row center">
