@@ -31,18 +31,17 @@ import { Component, OnInit } from '@angular/core';
           </div>
         </div>
       </article>
-      <article class="flex-row center">
+      <article class="flex-row">
         <h4>Compétences Linguistiques</h4>
-        <ul>
+        <ul class="center">
           <li><strong>Anglais</strong> - niveau courant</li>
           <li><strong>Japonais</strong> - niveau intermédiaire</li>
           <li><strong>Espagnol</strong> - niveau scolaire</li>
         </ul>
-        <div></div>
       </article>
       <article class="flex-row center">
         <h4>Compétences Sociales</h4>
-        <div class="personnality flex-row">
+        <div class="personnality flex-row center">
           <p><i class="fas fa-bolt"></i>Dynamique</p>
           <p><i class="fas fa-grin-alt"></i>Enjouée</p>
           <p><i class="fas fa-fist-raised"></i>Volontaire</p>

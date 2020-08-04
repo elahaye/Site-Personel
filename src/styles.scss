@@ -188,7 +188,10 @@ nav a:hover {
 #skills article {
   margin-bottom: 20px;
 }
-#skills article:first-of-type > div {
+#skills article:first-of-type > div,
+#skills article h4 + ul,
+.personnality {
+  list-style-type: none;
   width: 50%;
 }
 .personnality {
@@ -400,8 +403,8 @@ nav a:hover {
   #skills article:first-of-type > div {
     width: 100%;
   }
-  #skills article:nth-of-type(2) li {
-    list-style-type: none;
+  .center {
+    margin: 0 auto;
   }
 }
 
