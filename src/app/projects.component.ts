@@ -13,7 +13,8 @@ import { environment } from '../environments/environment';
             ><img src="assets/projet1.png" alt="Projet 1"
           /></a>
           <div class="flex-column">
-            <a [href]="env.lienLevelUp"><h4>Projet 1 - Level Up</h4></a>
+            <h4>Projet 1 - Level Up</h4>
+            <p><strong>Bientôt en ligne</strong></p>
             <p>
               Projet réalisé dans le cadre de la fin de ma première formation
             </p>
@@ -26,7 +27,6 @@ import { environment } from '../environments/environment';
               <span class="underline">Conditions</span> : from scratch, pas de
               libraires, créer son propre Framework MVC
             </p>
-            <p><strong>Bientôt en ligne</strong></p>
           </div>
         </div>
         <div class="flex-row persoproject">
@@ -39,15 +39,19 @@ import { environment } from '../environments/environment';
             /></a>
           </div>
           <div class="flex-column">
-            <a [href]="env.lienShareMyBook"
-              ><h4>Projet 2 - Share My Book</h4></a
-            >
-            <a class="underline" [href]="env.lienShareMyBookAdmin"
-              ><strong
-                ><i class="fas fa-plus-circle"></i>Lien Site
-                Administration</strong
-              ></a
-            >
+            <h4>Projet 2 - Share My Book</h4>
+            <a [href]="env.lienShareMyBook">
+              <strong class="underline"
+                ><i class="fas fa-plus-circle"></i>Lien Site Principal
+              </strong>
+              ->Identifiants tests : akira@gmail.com / mdp: password
+            </a>
+            <a [href]="env.lienShareMyBookAdmin">
+              <strong class="underline"
+                ><i class="fas fa-plus-circle"></i>Lien Site Administration
+              </strong>
+              -> Identifiants tests : admin@gmail.com / mdp: password
+            </a>
             <p>
               Projet réalisé dans le cadre de la fin de ma seconde formation
             </p>
@@ -59,7 +63,6 @@ import { environment } from '../environments/environment';
               <span class="underline">Conditions</span> : from scratch, Front
               ANGULAR et Back SYMFONY
             </p>
-            <p><strong>Bientôt en ligne</strong></p>
           </div>
         </div>
       </article>
