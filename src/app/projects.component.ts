@@ -28,7 +28,7 @@ import { environment } from '../environments/environment';
             </p>
             <p>
               <span class="underline">Conditions</span> : from scratch, pas de
-              libraires, créer son propre Framework MVC
+              librairies, créer son propre Framework MVC
             </p>
           </div>
         </div>
@@ -60,7 +60,7 @@ import { environment } from '../environments/environment';
             </p>
             <p>
               Share My Book est un outil de gestion de listes de livres. Les
-              utlisateurs peuvent y échanger leurs écrits favoris.
+              utilisateurs peuvent y échanger leurs écrits favoris.
             </p>
             <p>
               <span class="underline">Conditions</span> : from scratch, Front
