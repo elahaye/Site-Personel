@@ -7,6 +7,9 @@ import { environment } from '../environments/environment';
     <section id="project">
       <article>
         <h3>Projets Personnels</h3>
+        <a class="github" [href]="env.lienGitHub"
+          ><strong><i class="fab fa-github"></i>Lien GitHub</strong></a
+        >
 
         <div class="flex-row persoproject">
           <a [href]="env.lienLevelUp"

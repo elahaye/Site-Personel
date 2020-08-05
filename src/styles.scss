@@ -210,11 +210,14 @@ nav a:hover {
 #project li {
   text-align: left;
 }
+.github {
+  font-size: 2.7rem;
+}
 .underline {
   text-decoration: underline;
 }
 .persoproject {
-  margin-bottom: 10px;
+  margin: 10px 0;
   align-items: center;
 }
 .persoproject a,
@@ -226,7 +229,7 @@ nav a:hover {
   width: 60%;
 }
 .persoproject h4 {
-  margin: 20px;
+  margin: 30px;
 }
 
 .persoproject img {

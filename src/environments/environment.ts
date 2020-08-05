@@ -4,9 +4,10 @@
 
 export const environment = {
   production: false,
-  lienLevelUp: 'http://localhost:4201',
-  lienShareMyBook: 'http://localhost:3000',
-  lienShareMyBookAdmin: 'http://localhost:3001',
+  lienGitHub: 'https://github.com/elahaye',
+  lienLevelUp: 'http://localhost:4201/home',
+  lienShareMyBook: 'http://localhost:4200',
+  lienShareMyBookAdmin: 'http://localhost:300',
 };
 
 /*
