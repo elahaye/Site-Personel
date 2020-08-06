@@ -14,7 +14,7 @@ import { environment } from '../environments/environment';
         <div class="flex-row persoproject">
           <a href="#"><img src="assets/projet1.png" alt="Projet 1" /></a>
           <div class="flex-column">
-            <h4>Projet 1 - Level Up</h4>
+            <a href="#"><h4>Projet 1 - Level Up</h4></a>
             <p><strong>Bientôt en ligne - en cours de modification</strong></p>
             <p>
               Projet réalisé dans le cadre de la fin de ma première formation
@@ -39,19 +39,21 @@ import { environment } from '../environments/environment';
               ><img src="assets/projet2admin.png" alt="Projet 2"
             /></a>
           </div>
-          <div class="flex-column">
-            <h4>Projet 2 - Share My Book</h4>
+          <div class="flex-column connexionLogs">
+            <a [href]="env.lienShareMyBook"
+              ><h4>Projet 2 - Share My Book</h4></a
+            >
             <a [href]="env.lienShareMyBook">
               <strong class="underline"
                 ><i class="fas fa-plus-circle"></i>Lien Site Principal
               </strong>
-              ->Identifiants test : akira@gmail.com / mdp: password
+              : Identifiants test : akira@gmail.com - mdp: password
             </a>
             <a [href]="env.lienShareMyBookAdmin">
               <strong class="underline"
                 ><i class="fas fa-plus-circle"></i>Lien Site Administration
               </strong>
-              -> Identifiants test : admin@gmail.com / mdp: password
+              : Identifiants test : admin@gmail.com - mdp: password
             </a>
             <p>
               Projet réalisé dans le cadre de la fin de ma seconde formation

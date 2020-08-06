@@ -207,11 +207,19 @@ nav a:hover {
 ------------------------------------------------------------
 ----------------------------------------------------------*/
 
+#project article:not(:first-child) h4,
+#project ul {
+  width: 30%;
+}
 #project li {
   text-align: left;
 }
 .github {
   font-size: 2.7rem;
+  border: 1px solid var(--darkBlueColor);
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px var(--darkBlueColor);
+  padding: 10px;
 }
 .underline {
   text-decoration: underline;
@@ -229,7 +237,7 @@ nav a:hover {
   width: 60%;
 }
 .persoproject h4 {
-  margin: 30px;
+  margin: 30px 30px 0;
 }
 
 .persoproject img {
@@ -302,7 +310,7 @@ nav a:hover {
 
     &.visible {
       transition: ease-in-out 1s;
-      top: 59px;
+      top: 57px;
       z-index: 10;
     }
     &.invisible {
@@ -436,20 +444,34 @@ nav a:hover {
 @media only screen and (max-width: 1020px) {
   #project .flex-row {
     flex-direction: column;
+    margin: 0 10px;
   }
-  .persoproject {
+  #project article:not(.perproject) h4,
+  #project ul {
+    width: 100%;
+  }
+  #project h4 {
+    margin: 30px 0 20px;
+  }
+  #project .persoproject {
     margin-bottom: 40px;
+    flex-direction: column-reverse;
   }
-  .persoproject div {
+  .persoproject img {
+    margin-top: 25px;
+  }
+  .persoproject div:not(.twolinks) {
     width: 100%;
   }
   #project li {
     text-align: center;
-  }
-  #project h4 {
-    margin: 30px 0 10px;
+    list-style-type: none;
   }
   #course li {
     list-style-type: none;
+  }
+  .connexionLogs a:not(:first-of-type) {
+    text-align: left;
+    margin: 0 0 20px 10px;
   }
 }

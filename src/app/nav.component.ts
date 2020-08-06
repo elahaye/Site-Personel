@@ -13,11 +13,13 @@ import { Component, OnInit, OnChanges } from '@angular/core';
         <a routerLink="" *ngIf="!buttonMobileNav"
           ><img src="../assets/lotus.png" alt="Arbre de vie"
         /></a>
-        <a routerLink="" *ngIf="buttonMobileNav">Accueil</a>
-        <a routerLink="course">Mon parcours</a>
-        <a routerLink="skills">Mes compétences</a>
-        <a routerLink="projects">Mes projets</a>
-        <a routerLink="contact">Contact</a>
+        <a routerLink="" *ngIf="buttonMobileNav" (click)="changeNavbar()"
+          >Accueil</a
+        >
+        <a routerLink="course" (click)="changeNavbar()">Mon parcours</a>
+        <a routerLink="skills" (click)="changeNavbar()">Mes compétences</a>
+        <a routerLink="projects" (click)="changeNavbar()">Mes projets</a>
+        <a routerLink="contact" (click)="changeNavbar()">Contact</a>
       </nav>
     </header>
   `,
@@ -26,7 +28,7 @@ import { Component, OnInit, OnChanges } from '@angular/core';
 export class NavComponent implements OnInit {
   public innerWidth: any;
   public buttonMobileNav = false;
-  public navbar = true;
+  public navbar = false;
   public clickOnNavbar = false;
 
   constructor() {}
