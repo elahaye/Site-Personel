@@ -15,7 +15,18 @@ import { environment } from '../environments/environment';
           <a href="#"><img src="assets/projet1.png" alt="Projet 1" /></a>
           <div class="flex-column">
             <a href="#"><h4>Projet 1 - Level Up</h4></a>
-            <p><strong>Bientôt en ligne - en cours de modification</strong></p>
+            <p>
+              <strong>Utilisateur basique</strong> - Identifiants tests :
+              elise@gmail.com / mdp : password
+            </p>
+            <p>
+              <strong>Auteur</strong> - Identifiants tests : marcus@gmail.com /
+              mdp : password
+            </p>
+            <p>
+              <strong>Administrateur</strong> - Identifiants tests :
+              admin@gmail.com / mdp : password
+            </p>
             <p>
               Projet réalisé dans le cadre de la fin de ma première formation
             </p>
@@ -47,13 +58,13 @@ import { environment } from '../environments/environment';
               <strong class="underline"
                 ><i class="fas fa-plus-circle"></i>Lien Site Principal
               </strong>
-              : Identifiants test : akira@gmail.com - mdp: password
+              - Identifiants test : akira@gmail.com / mdp: password
             </a>
             <a [href]="env.lienShareMyBookAdmin">
               <strong class="underline"
                 ><i class="fas fa-plus-circle"></i>Lien Site Administration
               </strong>
-              : Identifiants test : admin@gmail.com - mdp: password
+              - Identifiants test : admin@gmail.com / mdp: password
             </a>
             <p>
               Projet réalisé dans le cadre de la fin de ma seconde formation
@@ -64,7 +75,7 @@ import { environment } from '../environments/environment';
             </p>
             <p>
               <span class="underline">Conditions</span> : from scratch, Front
-              ANGULAR et Back SYMFONY
+              ANGULAR et Back SYMFONY, 10 jours
             </p>
           </div>
         </div>
