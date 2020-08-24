@@ -12,9 +12,11 @@ import { environment } from '../environments/environment';
         >
 
         <div class="flex-row persoproject">
-          <a href="#"><img src="assets/projet1.png" alt="Projet 1" /></a>
+          <a href="env.lienLevelUp"
+            ><img src="assets/projet1.png" alt="Projet 1"
+          /></a>
           <div class="flex-column">
-            <a href="#"><h4>Projet 1 - Level Up</h4></a>
+            <a href="env.lienLevelUp"><h4>Projet 1 - Level Up</h4></a>
             <p>
               <strong>Utilisateur basique</strong> - Identifiants tests :
               elise@gmail.com / mdp : password
