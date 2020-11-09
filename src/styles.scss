@@ -152,45 +152,48 @@ ul {
   h2 {
     font-size: 3rem;
   }
-  #intro article {
-    padding: 0 0 0 0;
-  }
-  #intro img {
-    width: 35vw;
-  }
-
-  #course article > div > p:first-child {
-    width: 18%;
-    font-size: 1.7rem;
-  }
-  #course article > div > p + div,
-  #course article > div > p + p {
-    width: 77%;
-    font-size: 1.7rem;
-  }
-  #course li {
-    font-size: 1.6rem;
-  }
-  #course .fas {
-    font-size: 2rem;
-    padding: 0 5px;
+  #intro {
+    article {
+      padding: 0 0 0 0;
+    }
+    img {
+      width: 35vw;
+    }
   }
 
-  #contact .flex-row {
-    flex-direction: column;
-    align-items: center;
+  #course {
+    article > div > p:first-child {
+      width: 18%;
+      font-size: 1.7rem;
+    }
+    article > div > p + div, article > div > p + p {
+      width: 77%;
+      font-size: 1.7rem;
+    }
+    li {
+      font-size: 1.6rem;
+    }
+    .fas {
+      font-size: 2rem;
+      padding: 0 5px;
+    }
   }
-  #contact button {
-    width: 50%;
-  }
-  #contact button:not(:last-child) {
-    margin-top: 20px;
-    margin-right: 0;
-  }
-  #contact .fas,
-  #contact .fab,
-  #contact .far {
-    font-size: 2.5rem;
+
+  #contact {
+    .flex-row {
+      flex-direction: column;
+      align-items: center;
+    }
+    button {
+      width: 50%;
+    }
+    button:not(:last-child) {
+      margin-top: 20px;
+      margin-right: 0;
+    }
+    .fas, .fab,.far {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -200,31 +203,37 @@ ul {
 ------------------------------------------------------------
 ----------------------------------------------------------*/
 @media only screen and (max-width: 900px) {
-  #skills article {
-    margin-bottom: 20px;
-    flex-direction: column;
-  }
-  #skills article:first-of-type > div {
-    width: 100%;
-  }
-  .center {
-    margin: 0 auto;
+  #skills {
+    article {
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+    article:first-of-type > div {
+      width: 100%;
+    }
+    .center {
+      margin: 0 auto;
+    }
   }
 }
 
 @media only screen and (max-width: 400px) {
-  #skills article:first-of-type > div {
-    display: flex;
-    flex-direction: column;
+  #skills {
+    article:first-of-type > div {
+      display: flex;
+      flex-direction: column;
+    }
+    li {
+      list-style-type: none;
+    }
   }
-  #skills li {
-    list-style-type: none;
-  }
+
   .personnality {
     flex-direction: column;
-  }
-  .personnality p {
-    margin-bottom: 30px;
+
+    p {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -235,28 +244,32 @@ ul {
 ----------------------------------------------------------*/
 
 @media only screen and (max-width: 1020px) {
-  #project .flex-row {
+  .flex-row {
     flex-direction: column;
     margin: 0 10px;
   }
-  #project article:not(.perproject) h4,
-  #project ul {
+  article:not(.perproject) h4,
+  ul {
     width: 100%;
   }
-  #project h4 {
+  h4 {
     margin: 30px 0 20px;
   }
-  #project .persoproject {
+
+  .persoproject {
     margin-bottom: 40px;
     flex-direction: column-reverse;
+
+    img {
+      margin-top: 25px;
+    }
+    div:not(.twolinks) {
+      width: 100%;
+    }
+
   }
-  .persoproject img {
-    margin-top: 25px;
-  }
-  .persoproject div:not(.twolinks) {
-    width: 100%;
-  }
-  #project li {
+
+  li {
     text-align: center;
     list-style-type: none;
   }
