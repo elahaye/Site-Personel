@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { IntroComponent } from './intro.component';
-import { CourseComponent } from './course.component';
-import { SkillsComponent } from './skills.component';
-import { ProjectsComponent } from './projects.component';
-import { ContactComponent } from './contact.component';
+import { IntroComponent } from './pages/intro/intro.component';
+import { CourseComponent } from './pages/course/course.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: IntroComponent },
@@ -18,4 +18,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

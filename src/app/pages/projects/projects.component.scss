@@ -1,0 +1,42 @@
+article:not(:first-child) h4,
+ul {
+  width: 30%;
+}
+li {
+  text-align: left;
+}
+.github {
+  font-size: 2.7rem;
+  border: 1px solid var(--darkBlueColor);
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px var(--darkBlueColor);
+  padding: 10px;
+}
+.underline {
+  text-decoration: underline;
+}
+.persoproject {
+  margin: 10px 0;
+  align-items: center;
+}
+.persoproject a,
+.persoproject p {
+  margin: 0 0 2% 0;
+  line-height: 1.2;
+}
+.persoproject div:not(.twolinks) {
+  width: 60%;
+}
+.persoproject h4 {
+  margin: 30px 30px 0;
+}
+
+.persoproject img {
+  height: 175px;
+  border: 2px solid var(--orangeColor);
+  border-radius: 20px;
+}
+
+.persoproject .underline {
+  margin-bottom: 30px;
+}

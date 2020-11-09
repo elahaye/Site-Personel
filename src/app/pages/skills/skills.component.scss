@@ -1,0 +1,15 @@
+article {
+  margin-bottom: 20px;
+}
+article:first-of-type > div,
+article h4 + ul,
+.personnality {
+  list-style-type: none;
+  width: 50%;
+}
+.personnality {
+  align-items: center;
+}
+.personnality p {
+  margin: 0 20px;
+}

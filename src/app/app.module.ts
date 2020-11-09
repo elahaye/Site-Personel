@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CourseComponent } from './course.component';
-import { NavComponent } from './nav.component';
-import { IntroComponent } from './intro.component';
-import { SkillsComponent } from './skills.component';
-import { ProjectsComponent } from './projects.component';
-import { ContactComponent } from './contact.component';
+import { CourseComponent } from './pages/course/course.component';
+import { NavComponent } from './shared/nav/nav.component';
+import { IntroComponent } from './pages/intro/intro.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [

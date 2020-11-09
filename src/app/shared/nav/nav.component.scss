@@ -1,0 +1,51 @@
+header {
+  background-color: var(--purpleColor);
+}
+nav {
+  padding: 2vh 2vw;
+}
+nav img {
+  color: white;
+  height: 5vh;
+}
+nav a {
+  color: white;
+  margin-right: 2%;
+  line-height: 1.5;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 720px) {
+  header {
+    .fas {
+      padding: 15px 10px;
+      color: white;
+    }
+  }
+  nav {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 4vw);
+  }
+  nav a {
+    margin: 0;
+  }
+
+  .nav-site {
+    position: absolute;
+    background-color: var(--purpleColor);
+
+    &.visible {
+      transition: ease-in-out 1s;
+      top: 57px;
+      z-index: 10;
+    }
+    &.invisible {
+      top: -139px;
+      z-index: -1;
+    }
+  }
+}

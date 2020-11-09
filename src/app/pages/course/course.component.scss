@@ -1,0 +1,21 @@
+article > div > p,
+article > div > p + div {
+  display: inline-block;
+}
+article > div > p:first-child {
+  width: 30%;
+  border-right: 1px solid var(--purpleColor);
+}
+article > div > p + div,
+article > div > p + p {
+  width: 65%;
+}
+ul {
+  display: inline-block;
+  margin-top: 0;
+}
+li {
+  list-style-type: circle;
+  font-size: 1.8rem;
+  color: var(--brownColor);
+}

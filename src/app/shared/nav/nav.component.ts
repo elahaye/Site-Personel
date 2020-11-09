@@ -1,37 +1,18 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
-  template: `
-    <header (window:resize)="onResize($event)">
-      <i
-        class="fas fa-bars"
-        *ngIf="buttonMobileNav"
-        (click)="changeNavbar()"
-      ></i>
-      <nav class="nav-site" [ngClass]="navbar ? 'visible' : 'invisible'">
-        <a routerLink="" *ngIf="!buttonMobileNav"
-          ><img src="../assets/lotus.png" alt="Arbre de vie"
-        /></a>
-        <a routerLink="" *ngIf="buttonMobileNav" (click)="changeNavbar()"
-          >Accueil</a
-        >
-        <a routerLink="course" (click)="changeNavbar()">Mon parcours</a>
-        <a routerLink="skills" (click)="changeNavbar()">Mes compétences</a>
-        <a routerLink="projects" (click)="changeNavbar()">Mes projets</a>
-        <a routerLink="contact" (click)="changeNavbar()">Contact</a>
-      </nav>
-    </header>
-  `,
-  styles: [],
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+
   public innerWidth: any;
   public buttonMobileNav = false;
   public navbar = false;
   public clickOnNavbar = false;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     this.innerWidth = window.innerWidth;
@@ -66,4 +47,5 @@ export class NavComponent implements OnInit {
       this.navbar = true;
     }
   }
+
 }
