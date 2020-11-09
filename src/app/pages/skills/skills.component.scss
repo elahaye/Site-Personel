@@ -1,10 +1,16 @@
 article {
   margin-bottom: 20px;
+
+  &.flex-row {
+    align-items: center;
+  }
+}
+li {
+  list-style-type: none;
 }
 article:first-of-type > div,
 article h4 + ul,
 .personnality {
-  list-style-type: none;
   width: 50%;
 }
 .personnality {
@@ -13,3 +19,19 @@ article h4 + ul,
 .personnality p {
   margin: 0 20px;
 }
+
+@media only screen and (max-width: 900px) {
+  .flex-row {
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .personnality p {
+      margin-bottom: 20px;
+    }
+  }
+
+  .center {
+    margin: 0 auto;
+  }
+}
+

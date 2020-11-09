@@ -20,6 +20,11 @@
 html {
   font-size: 62.5%; /* 1rem = 10px */
 }
+body {
+  background: url("assets/background2.jpg");
+  background-size: cover;
+}
+
 body,
 a {
   margin: 0 auto;
@@ -75,21 +80,27 @@ h4 {
   font-family: var(--titleWriting);
 }
 h3 {
-  font-size: 5rem;
-}
-section h3 {
-  text-shadow: 4px 3px 3px var(--orangeColor);
+  font-size: 7rem;
+  color: var(--purpleColor);
+  text-shadow:white 2px 2px,white -2px 2px,white -2px -2px,white 2px -2px;
 }
 h4 {
   font-size: 3.5rem;
+  margin: 20px 0 40px ;
 }
 section {
   color: var(--purpleColor);
   text-align: center;
   height: 91vh;
 }
+
 article {
   margin: 0 auto;
+  background-color: white;
+  padding: 20px 0;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px var(--orangeColor);
+  margin: 0 30px 30px;
 }
 strong {
   font-weight: bold;
@@ -107,177 +118,9 @@ ul {
   justify-content: space-around;
 }
 
-/*--------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
--------------------------------- SCREEN SIZES ------------------------------------
-----------------------------------------------------------------------------------
----------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------
-------------------------------------------------------------
--------- HOME PAGE / COURSE PAGE / CONTACT PAGE ------------
-------------------------------------------------------------
-----------------------------------------------------------*/
-
-@media only screen and (max-width: 1400px) {
-  h1 {
-    font-size: 7rem;
-  }
-  h2 {
+@media only screen and (max-width: 450px) {
+  h3 {
     font-size: 5rem;
   }
 }
 
-@media only screen and (max-width: 1120px) {
-  h1 {
-    font-size: 6rem;
-  }
-  h2 {
-    font-size: 4rem;
-  }
-  #intro article {
-    padding: 0 0 0 30vw;
-  }
-  #intro img {
-    width: 25vw;
-    border: 5px solid white;
-    margin-top: 6vh;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  #intro {
-    article {
-      padding: 0 0 0 0;
-    }
-    img {
-      width: 35vw;
-    }
-  }
-
-  #course {
-    article > div > p:first-child {
-      width: 18%;
-      font-size: 1.7rem;
-    }
-    article > div > p + div, article > div > p + p {
-      width: 77%;
-      font-size: 1.7rem;
-    }
-    li {
-      font-size: 1.6rem;
-    }
-    .fas {
-      font-size: 2rem;
-      padding: 0 5px;
-    }
-  }
-
-  #contact {
-    .flex-row {
-      flex-direction: column;
-      align-items: center;
-    }
-    button {
-      width: 50%;
-    }
-    button:not(:last-child) {
-      margin-top: 20px;
-      margin-right: 0;
-    }
-    .fas, .fab,.far {
-      font-size: 2.5rem;
-    }
-  }
-}
-
-/*----------------------------------------------------------
-------------------------------------------------------------
----------------------- SKILLS PAGE -------------------------
-------------------------------------------------------------
-----------------------------------------------------------*/
-@media only screen and (max-width: 900px) {
-  #skills {
-    article {
-      margin-bottom: 20px;
-      flex-direction: column;
-    }
-    article:first-of-type > div {
-      width: 100%;
-    }
-    .center {
-      margin: 0 auto;
-    }
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #skills {
-    article:first-of-type > div {
-      display: flex;
-      flex-direction: column;
-    }
-    li {
-      list-style-type: none;
-    }
-  }
-
-  .personnality {
-    flex-direction: column;
-
-    p {
-      margin-bottom: 30px;
-    }
-  }
-}
-
-/*----------------------------------------------------------
-------------------------------------------------------------
--------------------- PROJECTS PAGE -------------------------
-------------------------------------------------------------
-----------------------------------------------------------*/
-
-@media only screen and (max-width: 1020px) {
-  .flex-row {
-    flex-direction: column;
-    margin: 0 10px;
-  }
-  article:not(.perproject) h4,
-  ul {
-    width: 100%;
-  }
-  h4 {
-    margin: 30px 0 20px;
-  }
-
-  .persoproject {
-    margin-bottom: 40px;
-    flex-direction: column-reverse;
-
-    img {
-      margin-top: 25px;
-    }
-    div:not(.twolinks) {
-      width: 100%;
-    }
-
-  }
-
-  li {
-    text-align: center;
-    list-style-type: none;
-  }
-  #course li {
-    list-style-type: none;
-  }
-  .connexionLogs a:not(:first-of-type) {
-    text-align: left;
-    margin: 0 0 20px 10px;
-  }
-}

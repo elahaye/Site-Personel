@@ -1,14 +1,61 @@
 section {
-  background: url("assets/background.jpg") left no-repeat;
+  background: url("assets/backgroundIntro.jpg") no-repeat;
   background-size: cover;
+
 }
-img {
-  width: 16vw;
-  border: 10px solid white;
-  border-radius: 50%;
-  margin-top: 10vh;
-}
-article {
+div {
   padding: 0 0 0 50vw;
   text-align: center;
+
+  img {
+    width: 16vw;
+    border: 10px solid white;
+    border-radius: 50%;
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  div {
+    h1 {
+      font-size: 6rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+    img {
+      width: 25vw;
+      border: 5px solid white;
+      margin-top: 6vh;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  div {
+    padding: 0;
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+    article {
+      padding: 0 0 0 0;
+    }
+    img {
+      width: 35vw;
+    }
+
+  }
 }

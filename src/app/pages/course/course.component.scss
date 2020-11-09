@@ -19,3 +19,28 @@ li {
   font-size: 1.8rem;
   color: var(--brownColor);
 }
+
+
+@media only screen and (max-width: 1020px) {
+  li {
+    list-style-type: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  article > div > p:first-child {
+    width: 18%;
+    font-size: 1.7rem;
+  }
+  article > div > p + div, article > div > p + p {
+    width: 77%;
+    font-size: 1.7rem;
+  }
+  li {
+    font-size: 1.6rem;
+  }
+  .fas {
+    font-size: 2rem;
+    padding: 0 5px;
+  }
+}

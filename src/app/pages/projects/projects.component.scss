@@ -1,9 +1,5 @@
-article:not(:first-child) h4,
-ul {
-  width: 30%;
-}
-li {
-  text-align: left;
+h3 {
+  margin-bottom: 40px;
 }
 .github {
   font-size: 2.7rem;
@@ -11,32 +7,80 @@ li {
   border-radius: 20px;
   box-shadow: 3px 3px 5px var(--darkBlueColor);
   padding: 10px;
+  background-color: white;
+}
+main {
+  margin-top: 50px;
+}
+ul {
+  display: block;
+  width: 40%;
+  text-align: left;
+}
+h4 {
+  margin: 30px auto;
 }
 .underline {
   text-decoration: underline;
 }
 .persoproject {
-  margin: 10px 0;
   align-items: center;
-}
-.persoproject a,
-.persoproject p {
-  margin: 0 0 2% 0;
-  line-height: 1.2;
-}
-.persoproject div:not(.twolinks) {
-  width: 60%;
-}
-.persoproject h4 {
-  margin: 30px 30px 0;
+
+  a, p {
+    margin: 0 0 2% 0;
+    line-height: 1.2;
+
+    &.inProgress {
+      margin-bottom: 25px;
+      font-style: italic;
+    }
+  }
+  div:not(.twolinks) {
+    width: 60%;
+  }
+  img {
+    height: 175px;
+    border: 2px solid var(--orangeColor);
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .underline {
+    margin-bottom: 30px;
+  }
 }
 
-.persoproject img {
-  height: 175px;
-  border: 2px solid var(--orangeColor);
-  border-radius: 20px;
-}
+@media only screen and (max-width: 1020px) {
+  .flex-row {
+    flex-direction: column;
+    margin: 10px;
+  }
+  article:not(:first-child) h4, article:not(:first-child) ul {
+    width: 100%;
+  }
+  h4 {
+    margin: 20px 0 20px;
+  }
 
-.persoproject .underline {
-  margin-bottom: 30px;
+  .persoproject {
+    margin-bottom: 40px;
+    flex-direction: column-reverse;
+
+    img {
+      margin-top: 25px;
+    }
+    div:not(.twolinks) {
+      width: 100%;
+    }
+
+  }
+
+  li {
+    text-align: center;
+    display: block;
+  }
+
+  .connexionLogs a:not(:first-of-type) {
+    text-align: left;
+    margin: 0 0 20px 10px;
+  }
 }

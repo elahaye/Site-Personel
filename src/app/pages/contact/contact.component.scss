@@ -1,5 +1,11 @@
 article {
   justify-content: center;
+
+  &.linkButtons {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+  }
 }
 p:not(:last-child),
 button:not(:last-child) {
@@ -7,12 +13,31 @@ button:not(:last-child) {
 }
 
 button {
-  border: 2px solid var(--orangeColor);
-  background-color: var(--orangeColor);
-  margin-top: 2%;
+  border: 2px solid var(--brownColor);
+  background-color: var(--purpleColor);
   box-shadow: 5px 4px 3px var(--brownColor);
   display: inline-block;
+
+  a {
+    color: white;
+  }
 }
-button a {
-  color: white;
+
+@media only screen and (max-width: 720px) {
+  .flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  button:not(:last-child) {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  .fas, .fab,.far {
+    font-size: 2.5rem;
+  }
 }
