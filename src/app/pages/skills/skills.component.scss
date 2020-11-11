@@ -35,3 +35,9 @@ article h4 + ul,
   }
 }
 
+@media only screen and (max-width: 365px) {
+  li > .fab, li > .fas {
+    display: none;
+  }
+}
+

@@ -1,46 +1,78 @@
+.flex-row {
+  align-items: center;
+}
+
 article > div > p,
 article > div > p + div {
   display: inline-block;
 }
 article > div > p:first-child {
   width: 30%;
-  border-right: 1px solid var(--purpleColor);
 }
 article > div > p + div,
 article > div > p + p {
   width: 65%;
+  padding: 0 10px;
+  margin: 10px 0;
+  border-left: 1px solid var(--purpleColor);
 }
 ul {
   display: inline-block;
   margin-top: 0;
 }
 li {
-  list-style-type: circle;
   font-size: 1.8rem;
   color: var(--brownColor);
+  list-style-type: circle;
 }
 
-
-@media only screen and (max-width: 1020px) {
-  li {
-    list-style-type: none;
-  }
-}
-
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 970px) {
   article > div > p:first-child {
     width: 18%;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   article > div > p + div, article > div > p + p {
     width: 77%;
-    font-size: 1.7rem;
   }
   li {
     font-size: 1.6rem;
+    list-style-type: none;
   }
   .fas {
     font-size: 2rem;
     padding: 0 5px;
   }
+}
+
+@media only screen and (max-width: 470px) {
+  .flex-row {
+    flex-direction: column;
+  }
+
+  article > div > p:first-child {
+    width: 50%;
+    padding-bottom: 10px;
+    margin: 30px 0 0 0;
+    border-bottom: 1px solid var(--brownColor);
+  }
+
+  article > div > p + div,
+  article > div > p + p {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 0 10px;
+    margin: 0;
+    border-left: none;
+
+    &.graduation {
+      padding-top: 13px;
+    }
+  }
+  .fas {
+    font-size: 1.7rem;
+  }
+  li {
+    font-size: 1.4rem;
+  }
+
 }

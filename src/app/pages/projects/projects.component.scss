@@ -84,3 +84,18 @@ h4 {
     margin: 0 0 20px 10px;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .github {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 2.6rem;
+  }
+  .persoproject img {
+    height: 115px;
+    border: 1px solid var(--orangeColor);
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+}

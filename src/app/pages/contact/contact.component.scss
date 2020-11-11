@@ -7,6 +7,12 @@ article {
     box-shadow: none;
   }
 }
+
+h3 + article {
+  width: 60%;
+  margin: auto;
+}
+
 p:not(:last-child),
 button:not(:last-child) {
   margin-right: 3%;
@@ -22,8 +28,17 @@ button {
     color: white;
   }
 }
+@media only screen and (max-width: 950px) {
+  .far, .fas, .fab {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
 
 @media only screen and (max-width: 720px) {
+  h3 + article {
+    width: 80%;
+  }
   .flex-row {
     flex-direction: column;
     align-items: center;
@@ -39,5 +54,11 @@ button {
   }
   .fas, .fab,.far {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  button {
+    width: 80%;
   }
 }

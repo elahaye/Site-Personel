@@ -97,7 +97,7 @@ section {
 article {
   margin: 0 auto;
   background-color: white;
-  padding: 20px 0;
+  padding: 20px 10px;
   border-radius: 20px;
   box-shadow: 10px 5px 5px var(--orangeColor);
   margin: 0 30px 30px;
@@ -118,9 +118,12 @@ ul {
   justify-content: space-around;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 720px) {
   h3 {
     font-size: 5rem;
+  }
+  body, a {
+    font-size: 1.7rem;
   }
 }
 
